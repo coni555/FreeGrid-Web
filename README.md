@@ -31,7 +31,8 @@ FreeGrid Web 是 iOS 版 FreeGrid 的**纯前端实现**：同一套「自由天
 | 平台 | 怎么用 | 说明 |
 |---|---|---|
 | 🪟 **Windows**（正式版） | [Releases](https://github.com/coni555/FreeGrid-Web/releases/latest) → `.exe` / `.msi` | Tauri 打包，**自带自动更新**。未签名，首次运行 SmartScreen 拦截点「更多信息 → 仍要运行」 |
-| 🍎 **iPhone / Mac**（原生） | [FreeGrid-Freedom](https://github.com/coni555/FreeGrid-Freedom/releases/latest) | 原生 SwiftUI 版，住在主仓。数据格式与本版完全互通 |
+| 🍎 **iPhone / Mac**（原生） | [FreeGrid-Freedom v1.1](https://github.com/coni555/FreeGrid-Freedom/releases/tag/v1.1) | 原生 SwiftUI 版，住在主仓。数据格式与本版完全互通 |
+| 🤖 **Android**（原生） | [FreeGrid-Freedom android-v1.0.0](https://github.com/coni555/FreeGrid-Freedom/releases/tag/android-v1.0.0) → `.apk` | 原生 Flutter 版，零联网。源码在 [FreeGrid-Android](https://github.com/coni555/FreeGrid-Android)，数据格式与本版完全互通 |
 | 🌐 **在线 demo** | **[freegrid-web.pages.dev](https://freegrid-web.pages.dev)** | 纯前端体验站，打开即用、零安装（无后端、不保存账号）。本仓库即它的源码 |
 
 > 🔁 **与 iOS 版数据互通**：序列化格式与 iOS 版的备份 JSON 完全一致——iOS 版导出 JSON，这里直接导入，账目无缝迁移到桌面/网页。
@@ -67,7 +68,7 @@ npm run tauri build         # 本地打桌面包（需 Rust 工具链）
 
 ## 后续计划
 
-- **安卓**：SwiftUI 无法直转，暂无安卓版。欢迎有安卓开发能力的朋友在本仓提 PR。
+- ~~**安卓**：暂无安卓版~~ → **已发布！** 原生 Flutter 版 [android-v1.0.0](https://github.com/coni555/FreeGrid-Freedom/releases/tag/android-v1.0.0)，源码在 [FreeGrid-Android](https://github.com/coni555/FreeGrid-Android)。
 - **代码签名**：去掉 Windows SmartScreen 警告（视情况，需付费证书）。
 - 想法 / bug 欢迎 issue / PR / discussion。
 
